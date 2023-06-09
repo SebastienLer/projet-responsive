@@ -1,6 +1,49 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Aladin;
+    src: url(../fonts/Aladin-Regular.ttf);
+}
+
+html {
+    background-image: url(../img/la_coupole.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+body {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    min-height: 100vh;
+    font-family: oswald;
+}
+textarea, select {
+    border: 2px solid #CC0066;
+    
+}
+label {
+    color: #CCCC99;
+    text-decoration: underline;
+
+}
+h1 {
+    border-bottom: 5px solid #0099cc;
+    margin-inline: 30%;
+  }
+.text-presentation{
+    color: #cccc99;
+}
 .h2 {
     background-color: #CC0066;
 }
 .horaires p {
     font-size: 16px;
 }
+
