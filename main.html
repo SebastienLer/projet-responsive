@@ -6,136 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/assets/css/mobile.css">    <title>La Coupole - Restaurant - Amiens<</title>
+    <link rel="stylesheet" href="public/assets/css/mobile.css">    
+    <title>La Coupole - Restaurant - Amiens<</title>
 </head>    
-<body class="text-light">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="text-light">La Coupole</h1>
-                <p class="text-presentation">
-                    Situé près du plus grand cirque en dur de France, notre établissement
-                    vous séduira par esprit bistrot parisien. On vous propose une carte
-                    réalisée à base de produits frais, imaginée au gré des saisons et
-                    régulièrement renouvelée. Si vous êtes amateur de bons vins, accompagnez
-                    votre planche de cochonnaille avec un bon verre.
-                </p>
+<body>
+    
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><p class="logo fs-1 p-2">La Coupole</p></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <ul class="d-flex justify-content-space-between gap-2 fs-4">
+                            <li><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                            <li><a class="nav-link" href="#photos">Photos</a></li>
+                            <li><a class="nav-link" href="#menu">Menu</a></li>
+                            <li><a class="nav-link" href="#resa">Réservation</a></li>
+                            <li><a class="nav-link" href="#horaires">Horaires</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row text-center">
-            <h2 class="text-center h2 col-10 mx-auto" id="menu">Menu de Saison</h2>
-            <h3>Entrées</h3>
-            <ul>
-                <li>tataki de saumon, légumes croquants, mayonnaise au wasabi</li>
-                <li>oeuf poché sur son crémeux butternut, trompettes de la mort,roquette</li>
-            </ul>
-            <h3>Plats</h3>
-            <ul>
-                <li>tartare de bœuf</li>
-                <li>entrecôte française, sauce barbecue</li>
-            <li>andouillette, sauce moutarde à l'ancienne</li>
-            <li>cuisse de canard confite aux écorces d'orange, céleri et sucrine
-            braisée
-            </li>
-            <li>poêlée de st jacques, potimarron, et ail fumé</li>
-            <li>ficelle picarde traditionnelle</li>
-            <li>pavé de saumon rôti déclinaison de choux sauce tartare</li>
-            </ul>
-            <h3>Desserts</h3>
-            <ul>
-                <li>tartelette citron meringuée, myrtille</li>
-                <li>crème brulée à la liqueur d'amande</li>
-                <li>poire pochée à la cannelle et écorce d'orange, crumble et sauce
-                chocolat</li>
-                <li>café gourmand</li>
-                <li>assiette trois fromages</li>
-            </ul>
-        </div>
-        <div class="row text-light">
-            <h2>Réservation</h2>
-            <form action="">
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="lname">Nom : </label>
-                    <input class="form-control" type="text" name="lname" id="lname">
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-light" id="home">La Coupole</h1>
+                    <p class="text-presentation">
+                        Situé près du plus grand cirque en dur de France, notre établissement
+                        vous séduira par esprit bistrot parisien. On vous propose une carte
+                        réalisée à base de produits frais, imaginée au gré des saisons et
+                        régulièrement renouvelée. Si vous êtes amateur de bons vins, accompagnez
+                        votre planche de cochonnaille avec un bon verre.
+                    </p>
                 </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="fname">Prénom : </label>
-                    <input class="form-control" type="text" name="fname" id="fname">
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="email">Email : </label>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="email@example.com">
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="tel">Téléphone : </label>
-                    <input class="form-control" type="tel" name="tel" id="tel" pattern="">
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="nbguest">Nonbre de personnes : </label>
-                    <input class="form-control" type="number" name="nbguest" id="nbguest" min="1" max="10">
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="date">Date : </label>
-                    <input class="form-control" type="date" name="date" id="date">
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="time">Heure : </label>
-                    <select class="form-control"t name="time" id="time">
-                        <option value="">-- Veuillez choisir une heure --</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:45">18:45</option>
-                    </select>
-                </div>
-                <div class="div col-12 mb-3">
-                    <label class="form-label" for="notes">Notes : </label>
-                    <texta class="form-control"rea name="notes" id="notes" cols="30" rows="10"></texta>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </div>
-            </form>
-        </div>
-       <div class="row">
+            </div>
+            <div class="row text-light">
+                <div class="h2 text-center text-white mx-auto col-10" id="resa">Réservation</div>
+                <form action="">
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="lname">Nom : </label>
+                        <input class="form-control" type="text" name="lname" id="lname">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="fname">Prénom : </label>
+                        <input class="form-control" type="text" name="fname" id="fname">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="email">Email : </label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="tel">Téléphone : </label>
+                        <input class="form-control" type="tel" name="tel" id="tel" pattern="">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="nbguest">Nonbre de personnes : </label>
+                        <input class="form-control" type="number" name="nbguest" id="nbguest" min="1" max="10">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="date">Date : </label>
+                        <input class="form-control" type="date" name="date" id="date">
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="time">Heure : </label>
+                        <select class="form-control" name="time" id="time">
+                            <option value="">-- Veuillez choisir une heure --</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:45">18:45</option>
+                        </select>
+                    </div>
+                    <div class="div col-12 mb-3">
+                        <label class="form-label" for="notes">Notes : </label>
+                        <textarea class="form-control" name="notes" id="notes" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        <div class="row">
             <div class="col-12">
                 <section id="hours">
                 <div class="h2 text-center text-white mx-auto col-10">Horaires</div>
-                <div class="horaires">                   
+                <div class="horaires" id="horaires">                   
                     <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-5">Lundi</h3>
-                      <p class="px-5">12:00 - 14:00</p>
+                    <h3 class="px-5">Lundi</h3>
+                    <p class="px-5">12:00 - 14:00</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center p-1">
-                      <h3 class="px-5">Mardi</h3>
-                      <p class="px-2">12:00 - 14:00</p>
-                      <p>19:00 - 21:30</p>
+                    <h3 class="px-5">Mardi</h3>
+                    <p class="px-2">12:00 - 14:00</p>
+                    <p>19:00 - 21:30</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-4">Mercredi</h3>
-                      <p class="px-2">12:00 - 14:00</p>
-                      <p>19:00 - 21:30</p>
+                    <h3 class="px-4">Mercredi</h3>
+                    <p class="px-2">12:00 - 14:00</p>
+                    <p>19:00 - 21:30</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-5">Jeudi</h3>
-                      <p class="px-2">12:00 - 14:00
-                      <p>19:00 - 21:30</p>
+                    <h3 class="px-5">Jeudi</h3>
+                    <p class="px-2">12:00 - 14:00
+                    <p>19:00 - 21:30</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-4">Vendredi</h3>
-                      <p class="px-2">12:00 - 14:00</p>
-                      <p>19:00 - 21:30</p>
-                    </div>
-              
-                    <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-4">Samedi</h3>
-                      <p class="px-5">19:00 - 21:30</p>
+                    <h3 class="px-4">Vendredi</h3>
+                    <p class="px-2">12:00 - 14:00</p>
+                    <p>19:00 - 21:30</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center p-2">
-                      <h3 class="px-5">Dimanche</h3>
-                      <p class="px-5">Fermé</p>
+                    <h3 class="px-4">Samedi</h3>
+                    <p class="px-5">19:00 - 21:30</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center p-2">
+                    <h3 class="px-5">Dimanche</h3>
+                    <p class="px-5">Fermé</p>
                     </div>
                 </div>
-                  <iframe class="map border-5 border border-info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.560900157793!2d2.293720515711102!3d49.88827207940164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78443d8a1b3b1%3A0xbe4c91edd1b1ad02!2sLa%20Coupole!5e0!3m2!1sfr!2sfr!4v1686312877622!5m2!1sfr!2sfr"
-                   width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map border-5 border border-info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.560900157793!2d2.293720515711102!3d49.88827207940164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78443d8a1b3b1%3A0xbe4c91edd1b1ad02!2sLa%20Coupole!5e0!3m2!1sfr!2sfr!4v1686312877622!5m2!1sfr!2sfr"
+                width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </div>
         </div>

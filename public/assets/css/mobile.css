@@ -47,7 +47,13 @@ h2 {
 .horaires p {
     font-size: 16px;
 }
-
+.logo{
+    font-family: aladin;
+    background-color: #CC0066;
+}
+li{
+    list-style: none;
+}
 #contact i {
     color: #CCCC99;
     font-size: 2rem;
