@@ -33,3 +33,10 @@ label {
     text-decoration: underline;
 
 }
+h1 {
+    border-bottom: 5px solid #0099cc;
+    margin-inline: 30%;
+  }
+.text-presentation{
+    color: #cccc99;
+}
