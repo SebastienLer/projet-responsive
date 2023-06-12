@@ -158,3 +158,12 @@ h3 {
 .box-v4{
     background-color: #cccc99;
 }
+iframe {
+    width: 100% ;
+    height: 50vh;
+}
+@media screen and (min-width : 992px) and (orientation: landscape) {
+    iframe {
+        height: 80vh;
+    }  
+}
