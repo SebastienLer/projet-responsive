@@ -68,3 +68,6 @@ h3 {
     font-family: dancingscript;
     padding-block: 24px;
 }
+.carousel img{
+    max-height: 50vh;
+}
