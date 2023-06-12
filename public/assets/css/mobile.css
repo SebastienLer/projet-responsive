@@ -17,12 +17,13 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    
 }
 body {
     background-color: hsla(0, 0%, 0%, 0.8);
     min-height: 100vh;
     font-family: oswald;
+    color: white;
 }
 textarea, select {
     border: 2px solid #CC0066;
