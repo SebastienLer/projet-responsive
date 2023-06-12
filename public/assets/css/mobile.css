@@ -164,6 +164,6 @@ iframe {
 }
 @media screen and (min-width : 992px) and (orientation: landscape) {
     iframe {
-        height: 80vh;
+        height: 85vh;
     }  
 }
